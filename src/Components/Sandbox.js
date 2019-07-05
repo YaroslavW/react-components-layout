@@ -38,7 +38,7 @@ const Sandbox = () => (
     <h2>
       <span>5. Button link</span>
     </h2>
-    <Button href="http://abcinblog.blogspot.com/">Link</Button>
+    <Button href='http://abcinblog.blogspot.com/'>Link</Button>
     <hr />
     <Button href='test' disabled>
       Link
