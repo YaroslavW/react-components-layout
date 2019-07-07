@@ -1,12 +1,14 @@
 import React from 'react';
+import Navigation from './Layout/Navigarion/index';
 // import Button from './Components/Sandbox'
 // import Sandbox from './Components/ButtonGroup/ButtonGroup'
 // import Sandbox from './Components/ButtonGroup/Sandbox';
-import Sandbox from './Components/Icon/Sandbox';
-const App = () => {
+// import Sandbox from './Components/Icon/Sandbox';
+const App = ({children}) => {
   return (
     <div>
-      <Sandbox />
+      <Navigation />
+      {children}
     </div>
   )
 }

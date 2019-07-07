@@ -2,4 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'))
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+import Home from './Components/Home/index';
+import ButtonSandbox from './Components/Button/Sandbox';
+import ButtonGroupSandbox from './Components/ButtonGroup/Sandbox';
+import IconSandbox from './Components/Icon/Sandbox';
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/button' component={ButtonSandbox} />
+        <Route path='/button-group' component={ButtonGroupSandbox} />
+        <Route path='/icon' component={IconSandbox} />
+      </Switch>
+    </App>
+  </BrowserRouter>,
+  document.getElementById('root')
+);
